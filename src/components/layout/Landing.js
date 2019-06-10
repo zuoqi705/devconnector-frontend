@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "antd";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -10,10 +11,14 @@ const Landing = () => {
         developers.
       </p>
       <div className="buttons">
-        <Button type="primary" href="/register" style={{ marginRight: "16px" }}>
-          Sign up
-        </Button>
-        <Button href="/login">Login</Button>
+        <Link to="/register">
+          <Button type="primary" style={{ marginRight: "16px" }}>
+            Sign up
+          </Button>
+        </Link>
+        <Link to="/login">
+          <Button>Login</Button>
+        </Link>
       </div>
     </section>
   );

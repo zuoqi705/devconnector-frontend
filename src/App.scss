@@ -2,6 +2,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  height: auto;
 }
 .navbar {
   height: 60px;
@@ -14,6 +15,7 @@ body {
   width: 100%;
   top: 0;
   box-shadow: 0 2px 8px #f0f1f2;
+  background-color: #fff;
 }
 .logo {
   flex: 1;
@@ -27,7 +29,8 @@ body {
 }
 .landing {
   position: relative;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 160px);
+  margin-top: 60px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -40,4 +43,10 @@ body {
   p {
     margin-bottom: 1.2rem;
   }
+}
+.container {
+  margin-top: 80px;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  padding: 0 2rem;
 }

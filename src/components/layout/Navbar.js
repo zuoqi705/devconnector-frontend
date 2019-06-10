@@ -1,23 +1,32 @@
 import React from "react";
 import { Button } from "antd";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Button className="logobtn" href="/" type="link">
-          DevConnector
-        </Button>
+        <Link to="/">
+          <Button className="logobtn" type="link">
+            DevConnector
+          </Button>
+        </Link>
       </div>
-      <Button className="navbtn" href="/profiles" type="link">
-        Developers
-      </Button>
-      <Button className="navbtn" href="/register" type="link">
-        Regiser
-      </Button>
-      <Button className="navbtn" href="/login" type="link">
-        Login
-      </Button>
+      <Link to="/profiles">
+        <Button className="navbtn" type="link">
+          Developers
+        </Button>
+      </Link>
+      <Link to="/register">
+        <Button className="navbtn" type="link">
+          Register
+        </Button>
+      </Link>
+      <Link to="login">
+        <Button className="navbtn" type="link">
+          Login
+        </Button>
+      </Link>
     </nav>
   );
 };
